@@ -1,6 +1,5 @@
 import {CityType} from "../02/02_02";
 import {createMessages, getStreetsTitlesOfGovernmentBuildings, getStreetsTitlesOfHouses} from "./5_02";
-import {createMessage} from "../03/03";
 import {expect} from "vitest";
 
 let city: CityType
