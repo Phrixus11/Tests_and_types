@@ -22,12 +22,16 @@ export const User = () => {
     //     alert("save")
     // }
 
-    let inputTempValue: string
     let myInput: EventTarget & HTMLInputElement
 
     const search = () => {
-        console.log(myInput.value)
-        myInput.value = ""
+        if(myInput) {
+            console.log(myInput.value)
+            myInput.value = ""
+        } else {
+            console.log('')
+        }
+
     }
 
     const onNameChanged = (e) => setText(e.target.value)
