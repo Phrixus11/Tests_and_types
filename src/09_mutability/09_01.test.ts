@@ -36,7 +36,7 @@ test('array reference test', ()=>{
 
     admins.push({age: 10, name: "Bob", address: {title: 'Minsk'}})
 
-    expect(users[2]).toEqual({age: 10, name: "Bob"})
+    expect(users[2]).toEqual({age: 10, name: "Bob", address: {title: 'Minsk'}})
 
 
 })
