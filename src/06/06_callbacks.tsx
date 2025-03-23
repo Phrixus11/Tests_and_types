@@ -14,13 +14,14 @@ export const User = () => {
 
     const [text, setText] = React.useState("hey")
 
-    // const deleteUser = (event: MouseEvent<HTMLButtonElement> ) => {
-    //     event.currentTarget.name
-    //     alert(event.currentTarget.name)
-    // }
-    // const saveUser = () => {
-    //     alert("save")
-    // }
+        // todo: реализация одного обработчика события на много кнопок, через проверку event.currentTarget.name
+    const deleteUser = (event: MouseEvent<HTMLButtonElement> ) => {
+        event.currentTarget.name
+        alert(event.currentTarget.name)
+    }
+    const saveUser = () => {
+        alert("save")
+    }
 
     let myInput: EventTarget & HTMLInputElement
 
@@ -54,8 +55,8 @@ export const User = () => {
             onBlur={focusLostHandler}></textarea>
             <input type="text" onChange={onAgeChanged}/>
             <button name='delete' onClick={search}>search</button>
-            {/*<button name='delete' onClick={deleteUser}>delete</button>*/}
-            {/*<button name='save' onClick={deleteUser}>save</button>*/}
+            <button name='delete' onClick={deleteUser}>delete</button>
+            <button name='save' onClick={deleteUser}>save</button>
         </div>
     )
 }
