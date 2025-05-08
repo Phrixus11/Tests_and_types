@@ -1,12 +1,13 @@
 import * as React from 'react'
 import './App.css'
-import {User} from "./06/06_callbacks";
+import Test_OMDb from "./11_promise_async_await/Lesson3";
 
 
 function App() {
   return (
     <>
-      <User/>
+      {/*<User/>*/}
+      <Test_OMDb/>
     </>
   )
 }
